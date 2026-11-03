@@ -1,0 +1,9 @@
+[2026-10-13T06:43:42.301+07:00] masa-rf | MOT17-02-FRCNN: 7536 boxes after filter, 107 IDs, 278.4 association FPS
+[2026-10-13T06:43:45.983+07:00] masa-rf | MOT17-04-FRCNN: 24001 boxes after filter, 92 IDs, 164.5 association FPS
+[2026-10-13T06:43:46.632+07:00] masa-rf | MOT17-05-FRCNN: 2926 boxes after filter, 74 IDs, 779.6 association FPS
+[2026-10-13T06:43:47.068+07:00] masa-rf | MOT17-09-FRCNN: 2429 boxes after filter, 22 IDs, 713.3 association FPS
+[2026-10-13T06:43:47.984+07:00] masa-rf | MOT17-10-FRCNN: 4987 boxes after filter, 49 IDs, 435.4 association FPS
+[2026-10-13T06:43:48.863+07:00] masa-rf | MOT17-11-FRCNN: 4394 boxes after filter, 67 IDs, 599.0 association FPS
+[2026-10-13T06:43:49.500+07:00] masa-rf | MOT17-13-FRCNN: 2741 boxes after filter, 44 IDs, 721.0 association FPS
+[2026-10-13T06:43:53.713+07:00] masa-rf: HOTA=68.97 AssA=71.49 DetA=67.02 IDF1=81.69 MOTA=78.26 IDSW=184
+[2026-10-13T06:43:53.713+07:00] masa-rf-interp: HOTA=70.16 AssA=72.44 DetA=68.46 IDF1=82.65 MOTA=80.20 IDSW=160

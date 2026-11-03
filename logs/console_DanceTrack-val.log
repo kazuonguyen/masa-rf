@@ -1,0 +1,27 @@
+[2026-10-13T07:45:50.820+07:00] masa-rf | dancetrack0004: 4464 boxes after filter, 9 IDs, 1859.8 association FPS
+[2026-10-13T07:45:51.555+07:00] masa-rf | dancetrack0005: 4608 boxes after filter, 7 IDs, 1871.9 association FPS
+[2026-10-13T07:45:52.893+07:00] masa-rf | dancetrack0007: 9218 boxes after filter, 12 IDs, 1022.4 association FPS
+[2026-10-13T07:45:54.076+07:00] masa-rf | dancetrack0010: 6786 boxes after filter, 12 IDs, 1146.3 association FPS
+[2026-10-13T07:45:56.069+07:00] masa-rf | dancetrack0014: 12532 boxes after filter, 39 IDs, 680.9 association FPS
+[2026-10-13T07:45:56.556+07:00] masa-rf | dancetrack0018: 2517 boxes after filter, 8 IDs, 1169.2 association FPS
+[2026-10-13T07:45:59.270+07:00] masa-rf | dancetrack0019: 16098 boxes after filter, 16 IDs, 997.0 association FPS
+[2026-10-13T07:46:00.358+07:00] masa-rf | dancetrack0025: 6863 boxes after filter, 23 IDs, 837.5 association FPS
+[2026-10-13T07:46:00.963+07:00] masa-rf | dancetrack0026: 3891 boxes after filter, 30 IDs, 571.3 association FPS
+[2026-10-13T07:46:02.344+07:00] masa-rf | dancetrack0030: 7552 boxes after filter, 7 IDs, 1026.9 association FPS
+[2026-10-13T07:46:03.964+07:00] masa-rf | dancetrack0034: 10585 boxes after filter, 36 IDs, 645.4 association FPS
+[2026-10-13T07:46:04.821+07:00] masa-rf | dancetrack0035: 5040 boxes after filter, 16 IDs, 928.4 association FPS
+[2026-10-13T07:46:07.114+07:00] masa-rf | dancetrack0041: 15334 boxes after filter, 57 IDs, 496.5 association FPS
+[2026-10-13T07:46:07.361+07:00] masa-rf | dancetrack0043: 1475 boxes after filter, 14 IDs, 863.3 association FPS
+[2026-10-13T07:46:09.020+07:00] masa-rf | dancetrack0047: 9370 boxes after filter, 21 IDs, 819.7 association FPS
+[2026-10-13T07:46:10.856+07:00] masa-rf | dancetrack0058: 10905 boxes after filter, 12 IDs, 981.2 association FPS
+[2026-10-13T07:46:12.361+07:00] masa-rf | dancetrack0063: 8428 boxes after filter, 68 IDs, 763.9 association FPS
+[2026-10-13T07:46:12.979+07:00] masa-rf | dancetrack0065: 3500 boxes after filter, 6 IDs, 1288.6 association FPS
+[2026-10-13T07:46:14.075+07:00] masa-rf | dancetrack0073: 7115 boxes after filter, 31 IDs, 725.6 association FPS
+[2026-10-13T07:46:15.833+07:00] masa-rf | dancetrack0077: 10820 boxes after filter, 14 IDs, 770.5 association FPS
+[2026-10-13T07:46:17.897+07:00] masa-rf | dancetrack0079: 14092 boxes after filter, 24 IDs, 657.1 association FPS
+[2026-10-13T07:46:20.295+07:00] masa-rf | dancetrack0081: 17449 boxes after filter, 52 IDs, 463.6 association FPS
+[2026-10-13T07:46:22.213+07:00] masa-rf | dancetrack0090: 12168 boxes after filter, 33 IDs, 595.0 association FPS
+[2026-10-13T07:46:23.788+07:00] masa-rf | dancetrack0094: 10976 boxes after filter, 56 IDs, 436.3 association FPS
+[2026-10-13T07:46:24.676+07:00] masa-rf | dancetrack0097: 4594 boxes after filter, 7 IDs, 1534.1 association FPS
+[2026-10-13T07:46:51.421+07:00] masa-rf: HOTA=56.79 AssA=40.89 DetA=79.14 IDF1=58.29 MOTA=90.27 IDSW=1710
+[2026-10-13T07:46:51.421+07:00] masa-rf-interp: HOTA=56.58 AssA=40.94 DetA=78.50 IDF1=58.07 MOTA=89.81 IDSW=1431

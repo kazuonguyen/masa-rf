@@ -1,0 +1,18 @@
+{
+  "written": "2026-10-06, before any validation-split tracking result was computed (only a 1-video DanceTrack-val smoke test of adapter correctness)",
+  "claim_under_test": "Training-free fusion of zero-shot MASA appearance with IoU/centre geometry, camera-motion compensation and occlusion-risk-scaled appearance memory improves association (HOTA, AssA, IDF1) over motion-only and ReID-based trackers on identical detections and identical embeddings.",
+  "tuning_splits": {
+    "MOT17": "train-half of the 7 FRCNN train sequences (frames 1..n//2+1), detector bytetrack_ablation (trained on CrowdHuman + MOT17 train-half)",
+    "DanceTrack": "6 train sequences: dancetrack0001 0002 0006 0008 0012 0015, official DanceTrack YOLOX model"
+  },
+  "reporting_splits": {
+    "MOT17-val": "val-half (frames n//2+2..n, ByteTrack split), bytetrack_ablation detector",
+    "DanceTrack-val": "all 25 val sequences",
+    "MOT20-val": "4 MOT20 train sequences with bytetrack_x_mot17 detector at 800x1440 (Deep OC-SORT protocol; MOT20 has no val split)"
+  },
+  "test_submissions": "MOT17 test (bytetrack_x_mot17), MOT20 test (bytetrack_x_mot20), DanceTrack test: files produced with configs locked after tuning; submission to evaluation servers requires the user's account and is done by the user.",
+  "baselines": "Official source of ByteTrack, OC-SORT, BoT-SORT (no ReID / MASA embeddings as ReID), Deep OC-SORT (MASA embeddings, grid off), MASA re-implementation, MASA-OA author tracker. Published default hyper-parameters, plus the same small tuning budget on the tuning split for the appearance threshold/weight of appearance-based baselines.",
+  "metrics": "TrackEval HOTA (primary), AssA, DetA, IDF1, MOTA, IDSW. Raw output primary; linear interpolation (gaps<=20) reported separately.",
+  "decision_rule": "Lock one configuration per benchmark family from tuning splits. Report every method on reporting splits once. Paired per-sequence bootstrap CI for HOTA difference vs strongest baseline. If the method does not beat the strongest baseline on reporting splits, report that as the result.",
+  "output_filter": "area > 10 px for all; w/h <= 1.6 for MOT17/MOT20 (ByteTrack tools/track.py)."
+}

@@ -1,0 +1,13 @@
+.venv/
+.venv-gpu/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+data/
+gt/
+cache/
+cache_det/
+cache_det_v2/
+outputs/
+saved_models/
+third_party/

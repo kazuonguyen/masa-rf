@@ -1,0 +1,102 @@
+{
+ "mot/bytetrack": {
+  "tuning_split": "MOT17-train-half",
+  "round": "bytetrack",
+  "tuning_HOTA": 75.49674812826864
+ },
+ "mot/ocsort": {
+  "tuning_split": "MOT17-train-half",
+  "round": "ocsort",
+  "tuning_HOTA": 75.86531462922255
+ },
+ "mot/botsort": {
+  "tuning_split": "MOT17-train-half",
+  "round": "botsort",
+  "tuning_HOTA": 77.96157198890845
+ },
+ "mot/botsort-reid": {
+  "tuning_split": "MOT17-train-half",
+  "round": "botsort-reid",
+  "tuning_HOTA": 78.74195007697716
+ },
+ "mot/deepocsort": {
+  "tuning_split": "MOT17-train-half",
+  "round": "deepocsort-r2",
+  "tuning_HOTA": 78.20406973917741
+ },
+ "mot/masa": {
+  "tuning_split": "MOT17-train-half",
+  "round": "masa",
+  "tuning_HOTA": 77.29867037499783
+ },
+ "mot/masa-oa-author": {
+  "tuning_split": "MOT17-train-half",
+  "round": "masa-oa-author",
+  "tuning_HOTA": 74.00187542823731
+ },
+ "mot/masa-rf": {
+  "tuning_split": "MOT17-train-half",
+  "round": "masa-rf-r2",
+  "tuning_HOTA": 78.66484773660545
+ },
+ "mot/botsort-reid-rf": {
+  "tuning_split": "MOT17-train-half",
+  "round": "botsort-reid-rf",
+  "tuning_HOTA": 78.74195007697716
+ },
+ "mot/deepocsort-rf": {
+  "tuning_split": "MOT17-train-half",
+  "round": "deepocsort-rf",
+  "tuning_HOTA": 78.28963693747357
+ },
+ "dancetrack/bytetrack": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "bytetrack",
+  "tuning_HOTA": 54.93636336044956
+ },
+ "dancetrack/ocsort": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "ocsort",
+  "tuning_HOTA": 64.4716844213623
+ },
+ "dancetrack/botsort": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "botsort",
+  "tuning_HOTA": 60.094300878314186
+ },
+ "dancetrack/botsort-reid": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "botsort-reid-r2",
+  "tuning_HOTA": 59.335696014148986
+ },
+ "dancetrack/deepocsort": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "deepocsort-r2",
+  "tuning_HOTA": 68.17303598001075
+ },
+ "dancetrack/masa": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "masa",
+  "tuning_HOTA": 57.251966186785666
+ },
+ "dancetrack/masa-oa-author": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "masa-oa-author",
+  "tuning_HOTA": 61.03070964575089
+ },
+ "dancetrack/masa-rf": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "masa-rf",
+  "tuning_HOTA": 62.40157811730438
+ },
+ "dancetrack/botsort-reid-rf": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "botsort-reid-rf",
+  "tuning_HOTA": 60.63907318033631
+ },
+ "dancetrack/deepocsort-rf": {
+  "tuning_split": "DanceTrack-tune",
+  "round": "deepocsort-rf",
+  "tuning_HOTA": 68.20314945007841
+ }
+}

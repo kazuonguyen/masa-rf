@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "era-masa-oa"
+version = "0.1.0"
+description = "Embedding reliability aware association experiments for MASA"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+era-masa = "era_masa.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["era_masa*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

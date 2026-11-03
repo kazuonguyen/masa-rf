@@ -1,0 +1,6 @@
+[2026-10-13T07:56:13.962+07:00] masa-rf | MOT20-01: 18295 boxes after filter, 109 IDs, 241.4 association FPS
+[2026-10-13T07:56:33.306+07:00] masa-rf | MOT20-02: 135925 boxes after filter, 525 IDs, 161.8 association FPS
+[2026-10-13T07:57:15.796+07:00] masa-rf | MOT20-03: 290758 boxes after filter, 889 IDs, 63.6 association FPS
+[2026-10-13T07:58:49.038+07:00] masa-rf | MOT20-05: 600021 boxes after filter, 2038 IDs, 40.3 association FPS
+[2026-10-13T08:00:00.228+07:00] masa-rf: HOTA=60.11 AssA=56.51 DetA=64.17 IDF1=74.93 MOTA=80.22 IDSW=2282
+[2026-10-13T08:00:00.228+07:00] masa-rf-interp: HOTA=60.71 AssA=56.85 DetA=65.07 IDF1=75.33 MOTA=81.45 IDSW=2079

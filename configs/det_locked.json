@@ -1,0 +1,564 @@
+{
+ "mot": [
+  {
+   "name": "bytetrack",
+   "method": "bytetrack",
+   "params": {
+    "track_thresh": 0.5,
+    "match_thresh": 0.9,
+    "track_buffer": 30
+   }
+  },
+  {
+   "name": "ocsort",
+   "method": "ocsort",
+   "params": {
+    "det_thresh": 0.6,
+    "iou_threshold": 0.2,
+    "inertia": 0.1,
+    "use_byte": false
+   }
+  },
+  {
+   "name": "botsort",
+   "method": "botsort",
+   "params": {
+    "track_high_thresh": 0.6,
+    "new_track_thresh": 0.6,
+    "match_thresh": 0.8,
+    "track_buffer": 30
+   }
+  },
+  {
+   "name": "botsort-reid",
+   "method": "botsort-reid",
+   "params": {
+    "appearance_thresh": 0.3,
+    "proximity_thresh": 0.5,
+    "match_thresh": 0.8
+   }
+  },
+  {
+   "name": "deepocsort",
+   "method": "deepocsort",
+   "params": {
+    "w_association_emb": 1.5,
+    "alpha_fixed_emb": 0.8,
+    "det_thresh": 0.6,
+    "aw_param": 0.5,
+    "max_age": 60,
+    "min_hits": 1,
+    "iou_threshold": 0.2,
+    "inertia": 0.1,
+    "delta_t": 3
+   }
+  },
+  {
+   "name": "masa",
+   "method": "masa",
+   "params": {
+    "match_threshold": 0.5,
+    "init_score_threshold": 0.6,
+    "object_score_threshold": 0.5,
+    "max_age": 30
+   }
+  },
+  {
+   "name": "masa-oa-author",
+   "method": "masa-oa-author",
+   "params": {
+    "match_score_thr": 0.5,
+    "init_score_thr": 0.8,
+    "obj_score_thr": 0.5,
+    "memo_tracklet_frames": 10
+   }
+  },
+  {
+   "name": "masa-rf",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 1.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.5,
+    "geometry_gate": 0.15,
+    "fuse_score": true
+   }
+  },
+  {
+   "name": "botsort-reid-rf",
+   "method": "botsort-reid-rf",
+   "params": {
+    "appearance_thresh": 0.3,
+    "proximity_thresh": 0.5,
+    "match_thresh": 0.8,
+    "orm_kappa": 0.0
+   }
+  },
+  {
+   "name": "deepocsort-rf",
+   "method": "deepocsort-rf",
+   "params": {
+    "w_association_emb": 1.5,
+    "alpha_fixed_emb": 0.8,
+    "det_thresh": 0.6,
+    "aw_param": 0.5,
+    "max_age": 60,
+    "min_hits": 1,
+    "iou_threshold": 0.2,
+    "inertia": 0.1,
+    "delta_t": 3,
+    "orm_kappa": 0.3,
+    "gaw_kappa": 0.0,
+    "gaw_margin": 0.2
+   }
+  },
+  {
+   "name": "bytetrack-default",
+   "method": "bytetrack",
+   "params": {}
+  },
+  {
+   "name": "ocsort-default",
+   "method": "ocsort",
+   "params": {}
+  },
+  {
+   "name": "botsort-default",
+   "method": "botsort",
+   "params": {}
+  },
+  {
+   "name": "botsort-reid-default",
+   "method": "botsort-reid",
+   "params": {}
+  },
+  {
+   "name": "deepocsort-default",
+   "method": "deepocsort",
+   "params": {}
+  },
+  {
+   "name": "masa-default",
+   "method": "masa",
+   "params": {}
+  },
+  {
+   "name": "masa-oa-author-default",
+   "method": "masa-oa-author",
+   "params": {}
+  },
+  {
+   "name": "deepocsort-rf-no-orm",
+   "method": "deepocsort-rf",
+   "params": {
+    "w_association_emb": 1.5,
+    "alpha_fixed_emb": 0.8,
+    "det_thresh": 0.6,
+    "aw_param": 0.5,
+    "max_age": 60,
+    "min_hits": 1,
+    "iou_threshold": 0.2,
+    "inertia": 0.1,
+    "delta_t": 3,
+    "orm_kappa": 0.0,
+    "gaw_kappa": 0.0,
+    "gaw_margin": 0.2
+   }
+  },
+  {
+   "name": "masa-rf-no-cmc",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 1.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.5,
+    "geometry_gate": 0.15,
+    "fuse_score": true,
+    "cmc": false
+   }
+  },
+  {
+   "name": "masa-rf-no-byte",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 1.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.5,
+    "geometry_gate": 0.15,
+    "fuse_score": true,
+    "byte_stage": false
+   }
+  },
+  {
+   "name": "masa-rf-no-appearance",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.0,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 1.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.5,
+    "geometry_gate": 0.15,
+    "fuse_score": true
+   }
+  },
+  {
+   "name": "masa-rf-no-geometry",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 1.0,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 1.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.5,
+    "geometry_gate": 0.15,
+    "fuse_score": true
+   }
+  },
+  {
+   "name": "masa-rf-no-adaptive-weight",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.5,
+    "geometry_gate": 0.15,
+    "fuse_score": true
+   }
+  },
+  {
+   "name": "masa-rf-no-appearance-gate",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 1.0,
+    "match_thresh": 0.7,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "new_track_thresh": 0.6,
+    "high_thresh": 0.6,
+    "track_buffer": 30,
+    "appearance_gate": 0.0,
+    "geometry_gate": 0.15,
+    "fuse_score": true
+   }
+  }
+ ],
+ "dancetrack": [
+  {
+   "name": "bytetrack",
+   "method": "bytetrack",
+   "params": {
+    "track_thresh": 0.5,
+    "match_thresh": 0.8,
+    "track_buffer": 30
+   }
+  },
+  {
+   "name": "ocsort",
+   "method": "ocsort",
+   "params": {
+    "det_thresh": 0.5,
+    "iou_threshold": 0.2,
+    "inertia": 0.1,
+    "use_byte": false
+   }
+  },
+  {
+   "name": "botsort",
+   "method": "botsort",
+   "params": {
+    "track_high_thresh": 0.5,
+    "new_track_thresh": 0.7,
+    "match_thresh": 0.8,
+    "track_buffer": 30
+   }
+  },
+  {
+   "name": "botsort-reid",
+   "method": "botsort-reid",
+   "params": {
+    "appearance_thresh": 0.4,
+    "proximity_thresh": 0.5,
+    "match_thresh": 0.7,
+    "new_track_thresh": 0.6,
+    "track_high_thresh": 0.6,
+    "track_buffer": 60,
+    "track_low_thresh": 0.1
+   }
+  },
+  {
+   "name": "deepocsort",
+   "method": "deepocsort",
+   "params": {
+    "w_association_emb": 1.0,
+    "alpha_fixed_emb": 0.95,
+    "det_thresh": 0.5,
+    "aw_param": 0.5,
+    "max_age": 30,
+    "min_hits": 1,
+    "iou_threshold": 0.3,
+    "inertia": 0.2,
+    "delta_t": 3
+   }
+  },
+  {
+   "name": "masa",
+   "method": "masa",
+   "params": {
+    "match_threshold": 0.3,
+    "init_score_threshold": 0.8,
+    "object_score_threshold": 0.3,
+    "max_age": 10
+   }
+  },
+  {
+   "name": "masa-oa-author",
+   "method": "masa-oa-author",
+   "params": {
+    "match_score_thr": 0.3,
+    "init_score_thr": 0.8,
+    "obj_score_thr": 0.3,
+    "memo_tracklet_frames": 10
+   }
+  },
+  {
+   "name": "masa-rf",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.25,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.9,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0
+   }
+  },
+  {
+   "name": "botsort-reid-rf",
+   "method": "botsort-reid-rf",
+   "params": {
+    "appearance_thresh": 0.4,
+    "proximity_thresh": 0.5,
+    "match_thresh": 0.7,
+    "new_track_thresh": 0.6,
+    "track_high_thresh": 0.6,
+    "track_buffer": 60,
+    "track_low_thresh": 0.1,
+    "orm_kappa": 0.3
+   }
+  },
+  {
+   "name": "deepocsort-rf",
+   "method": "deepocsort-rf",
+   "params": {
+    "w_association_emb": 1.0,
+    "alpha_fixed_emb": 0.95,
+    "det_thresh": 0.5,
+    "aw_param": 0.5,
+    "max_age": 30,
+    "min_hits": 1,
+    "iou_threshold": 0.3,
+    "inertia": 0.2,
+    "delta_t": 3,
+    "orm_kappa": 0.3,
+    "gaw_kappa": 0.0,
+    "gaw_margin": 0.2
+   }
+  },
+  {
+   "name": "bytetrack-default",
+   "method": "bytetrack",
+   "params": {}
+  },
+  {
+   "name": "ocsort-default",
+   "method": "ocsort",
+   "params": {}
+  },
+  {
+   "name": "botsort-default",
+   "method": "botsort",
+   "params": {}
+  },
+  {
+   "name": "botsort-reid-default",
+   "method": "botsort-reid",
+   "params": {}
+  },
+  {
+   "name": "deepocsort-default",
+   "method": "deepocsort",
+   "params": {}
+  },
+  {
+   "name": "masa-default",
+   "method": "masa",
+   "params": {}
+  },
+  {
+   "name": "masa-oa-author-default",
+   "method": "masa-oa-author",
+   "params": {}
+  },
+  {
+   "name": "deepocsort-rf-no-orm",
+   "method": "deepocsort-rf",
+   "params": {
+    "w_association_emb": 1.0,
+    "alpha_fixed_emb": 0.95,
+    "det_thresh": 0.5,
+    "aw_param": 0.5,
+    "max_age": 30,
+    "min_hits": 1,
+    "iou_threshold": 0.3,
+    "inertia": 0.2,
+    "delta_t": 3,
+    "orm_kappa": 0.0,
+    "gaw_kappa": 0.0,
+    "gaw_margin": 0.2
+   }
+  },
+  {
+   "name": "masa-rf-no-cmc",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.25,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.9,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "cmc": false
+   }
+  },
+  {
+   "name": "masa-rf-no-byte",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.25,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.9,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0,
+    "byte_stage": false
+   }
+  },
+  {
+   "name": "masa-rf-no-risk-memory",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.25,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.0,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0
+   }
+  },
+  {
+   "name": "masa-rf-no-center",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.3,
+    "center_weight": 0.0,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.9,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0
+   }
+  },
+  {
+   "name": "masa-rf-no-appearance",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 0.0,
+    "center_weight": 0.25,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.9,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0
+   }
+  },
+  {
+   "name": "masa-rf-no-geometry",
+   "method": "masa-rf",
+   "params": {
+    "appearance_weight": 1.0,
+    "center_weight": 0.25,
+    "ema_alpha": 0.1,
+    "risk_memory": 0.9,
+    "adaptive_weight": 0.0,
+    "match_thresh": 0.9,
+    "appearance_mode": "masa",
+    "age_penalty": 0.0
+   }
+  }
+ ]
+}

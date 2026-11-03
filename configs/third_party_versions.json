@@ -1,0 +1,71 @@
+{
+ "ByteTrack": {
+  "url": "https://github.com/ifzhang/ByteTrack",
+  "commit": "d1bf0191adff59bc8fcfeaa0b33d3d1642552a99",
+  "modified_on_disk": false,
+  "file_sha256": {
+   "yolox/tracker/byte_tracker.py": "cb018650764db2c7d7d70c8c92fa900fc4fe62518419520b168b281bc71f30d5",
+   "yolox/tracker/matching.py": "2f32f709c92fa199b22c22b18162249ccde7033a4648485ae4e82a698294f1fc",
+   "yolox/tracker/kalman_filter.py": "dc88e3b7c75131616e76ff6e5381239d618c8c07c81692002597416cbc24dce5",
+   "exps/example/mot/yolox_x_ablation.py": "98e834656599355f4ca3600ab609eb0e7708df9f16e92243de7633b725d7ffcb",
+   "exps/example/mot/yolox_x_mix_det.py": "bd0bec4a66a27b7150811574490c5d9432ca56829595adf4aba3180373ad6d3e",
+   "exps/example/mot/yolox_x_mix_mot20_ch.py": "92916b46a7817f149073deb3c6afc01c68d675891e1a4205443e1735385f428e"
+  }
+ },
+ "OC_SORT": {
+  "url": "https://github.com/noahcao/OC_SORT",
+  "commit": "8462e7e729a93ccd3bd995c0a79a890336cb3a0b",
+  "modified_on_disk": false,
+  "file_sha256": {
+   "trackers/ocsort_tracker/ocsort.py": "62f69b0f765b6445602f1151c19763b0ffc0b8c74eee2aed404a16e4b25e6fe1",
+   "trackers/ocsort_tracker/association.py": "cd837b1eb64022afc1ef519baaa3f21bd953b745c83e511614994a652aa4cf00",
+   "trackers/ocsort_tracker/kalmanfilter.py": "25282991539e3818737b41223eb27b24c33c4aa0dfcc47ba4892af451934fa1f"
+  }
+ },
+ "BoT-SORT": {
+  "url": "https://github.com/NirAharon/BoT-SORT",
+  "commit": "251985436d6712aaf682aaaf5f71edb4987224bd",
+  "modified_on_disk": false,
+  "file_sha256": {
+   "tracker/bot_sort.py": "c576206f231fe38581ff715aa4cee76546eebcad6313835085fad7455e39a03d",
+   "tracker/matching.py": "c585963d0a98f7f001e23de688414b4f0f08238090ed3bb14187f22df6f6b2de",
+   "tracker/kalman_filter.py": "a79e0e93c5a1023a4e538d17041b208a267dd75fb2d2c3ce8e0b931b3ca3deeb",
+   "tracker/gmc.py": "34e46d0e10788a86042ed63b1dd1a9478e15434d16e73e3907f5162793b364ef"
+  }
+ },
+ "Deep-OC-SORT": {
+  "url": "https://github.com/GerardMaggiolino/Deep-OC-SORT",
+  "commit": "6bb51d027b137233f5c520b6fcc4f2ae387a6ba9",
+  "modified_on_disk": false,
+  "file_sha256": {
+   "trackers/integrated_ocsort_embedding/ocsort.py": "19b1205d06fc72cf88407257a672365c6ceb25a9e9672cdfefd15c49b3a0bd8b",
+   "trackers/integrated_ocsort_embedding/association.py": "93b98ed573eb0ecc444dfa77cab97924781dd2b7b815a281c39a95dbab59b0a4",
+   "trackers/integrated_ocsort_embedding/kalmanfilter.py": "a387264d494b6d9d4325da44070211908c77cbc7c7e021373c909060d4a79a2e"
+  }
+ },
+ "MASA-OA": {
+  "url": "https://github.com/gonzalocarreteroh/MASA-OA",
+  "commit": "2dc7305b0d584aee7df45d83ed3c42804fa055fd",
+  "modified_on_disk": false,
+  "file_sha256": {
+   "masa/models/tracker/masa_tao_tracker.py": "6c7297fea6dfcc9d13c4ecde299dd71b3b0aaa56cc23a1c19f40071cba2d4358"
+  }
+ },
+ "TrackEval": {
+  "url": "https://github.com/JonathonLuiten/TrackEval",
+  "commit": "12c8791b303e0a0b50f753af204249e622d0281a",
+  "modified_on_disk": false,
+  "file_sha256": {
+   "trackeval/metrics/hota.py": "9dbd00d2a56eead5632399912591dd7e6ee6238ca5c35f54fca15e1b5f76c68e",
+   "trackeval/datasets/mot_challenge_2d_box.py": "e269f145caf4db54848412cc6b0ce9f0cb45787b28522ebaee4cdaeaae3aef44"
+  }
+ },
+ "_note": "Upstream files are never edited. In-memory substitutions only: NumPy aliases np.float/np.int/np.bool, cython_bbox -> era_masa/shims/cython_bbox.py (same +1 convention), FastReID/torchreid/GMC/embedder -> cached MASA embeddings and cached affine (era_masa/det_baselines.py).",
+ "checkpoints": {
+  "bytetrack_ablation.pth.tar": "26cb8d2808664e5068a4c812d53becbc948b47fd6eacf2b45db049ab40c48b1a",
+  "bytetrack_x_mot17.pth.tar": "e3945f3523fde1e107708aacd64dab0670c34e371d136e54587cac7a50d3cfba",
+  "bytetrack_x_mot20.pth.tar": "021d7bc47fe20ae690007454cd2192df6237c2f4446ae92737a79523de89de64",
+  "dancetrack_bytetrack_model.pth.tar": "b8d1afba08f801f3fe2cb122faf3fc9af6c7856405a0da94cf91cdd5eb9b3321",
+  "masa_r50.pth": "082670efc6e8820eff8257f78ea14dfb52d6cdbe2910ecccf0901a74f4a0fd76"
+ }
+}
